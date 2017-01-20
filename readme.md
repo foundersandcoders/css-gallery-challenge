@@ -1,3 +1,5 @@
+![Final Screenshot](./images/challenge-screenshot.png)
+
 # Instructions
 
 1. Clone this repo
