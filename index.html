@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Grid Challenge</title>
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/prestyle.css"> <!-- Don't Touch -->
+<!--    <link rel="stylesheet" href="css/style.css">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+<body>
+  
+
+<!-- 
+1. 
+
+Write css for the 'photo' class...
+The class should initially make the component display full width in the browser window, 
+but it's maximum width should be 600px.
+When the browser window exceeds 600px, the component should simply be centered horizontally.
+Whatever width the browser is at, the text should be centered.
+(Don't touch the inline border style and 100% width rule for the img tag, just make the 'photo' class in style.css)
+-->
+  
+<figure class="photo" style="border: 3px solid red;">
+  <img src="images/astronaut.jpg" alt="Floating Astronaut" width="100%">
+  <figcaption>Lovely Astronaut</figcaption>
+</figure>
+  
+  
+<!-- 
+2. Now add css to the class 'container', so that the two nested photo components display 100% width and stack on top of each other when the browser width is less than 600px (it should be by default), but a higher browser width results in the photos displaying side by side, with a combined width of 600px. Do not edit the original photo class you've built.
+(Hint, you will need to use a media query, and you will to use a child selector)
+-->
+  
+<div class="gallery" style="border: 3px solid black;">
+  <figure class="photo">
+    <img src="images/rocket2.jpg" alt="Great Rocket" width="100%">
+    <figcaption>Rocket Left</figcaption>
+  </figure>
+  <figure class="photo">
+    <img src="images/rocket2.jpg" alt="Great Rocket" width="100%">
+    <figcaption>Rocket Right</figcaption>
+  </figure>
+</div>
+  
+<!-- 
+3. Finally, write the css for class 'quarters', alters the gallery so that for browser viewports wider than 600px display the nested images side by side, so each take up 25% width of the gallery.
+-->
+  
+<div class="gallery quarters" style="border: 3px solid blue;">
+  <figure class="photo">
+    <img src="images/rocket1.jpg" alt="Great Rocket" width="100%">
+    <figcaption>Rocket 1</figcaption>
+  </figure>
+  <figure class="photo">
+    <img src="images/rocket1.jpg" alt="Great Rocket" width="100%">
+    <figcaption>Rocket 2</figcaption>
+  </figure>
+  <figure class="photo">
+    <img src="images/rocket1.jpg" alt="Great Rocket" width="100%">
+    <figcaption>Rocket 3</figcaption>
+  </figure>
+  <figure class="photo">
+    <img src="images/rocket1.jpg" alt="Great Rocket" width="100%">
+    <figcaption>Rocket 4</figcaption>
+  </figure>
+</div>
+  
+<!-- 
+4. (Optional), Your stylesheet should now contain rules for 3 classes, 'photo, gallery, and quarters'. Change the class names to conform to BEM standards. 
+You'll need to figure out 3 things;
+  1. Which of these classes would qualify as the BLOCK ?
+  2. Which of these classes would be an ELEMENT ?
+  3. Which of these classes would be a MODIFIER ?
+Once you've figured that out, change the existing class names to your new ones in this file and the style.css file.
+-->
+
+ 
+</body>
+</html>
