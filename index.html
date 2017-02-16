@@ -46,7 +46,7 @@ When the browser window exceeds 600px, the component should simply be centered h
 </div>
   
 <!-- 
-3. Finally, write rules for the class 'quarters', which alters the gallery so that for browser viewports wider than 600px display the nested images side by side, so each take up 25% width of the gallery.
+3. Write rules for the class 'quarters', which alters the gallery so that for browser viewports wider than 600px display the nested images side by side, so each take up 25% width of the gallery.
 -->
   
 <div class="gallery quarters" style="border: 3px solid blue;">
@@ -69,13 +69,17 @@ When the browser window exceeds 600px, the component should simply be centered h
 </div>
   
 <!-- 
-4. (Optional), Your stylesheet should now contain rules for 3 classes, 'photo, gallery, and quarters'. Change the class names to conform to BEM standards. 
-You'll need to figure out 3 things;
-  1. Which of these classes would qualify as the BLOCK ?
-  2. Which of these classes would be an ELEMENT ?
-  3. Which of these classes would be a MODIFIER ?
-Once you've figured that out, change the existing class names to your new ones in this file and the style.css file.
+4. For your final part of the challenge, I need you to be a magician for me...
+Below, a single gallery item exists with the class 'photo' and 'tripled' inside the gallery container we've been working with. Write css rules so that for browser viewports wider than 600px, this gallery item is multiplied evenly into three items (see pic in the readme for clarification!). Do not modify any of the markup below, good luck!
 -->
+  
+<div class="gallery" style="border: 3px solid green;">
+  <figure class="photo tripled">
+    <img src="images/rocket1.jpg" alt="Great Rocket" width="100%">
+    <figcaption>Rocket 1 (tripled)</figcaption>
+  </figure>
+</div>  
+  
 
  
 </body>
