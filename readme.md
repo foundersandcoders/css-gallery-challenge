@@ -7,7 +7,7 @@
 
 1. First, clone this repo
 ```
-$ git clone https://github.com:njsfield/css-gallery-challenge.git
+$ git clone https://github.com/njsfield/css-gallery-challenge.git
 ```
 2. Open the project in your text editor (I recommend using brackets for this)
 3. Read through through the comments in the index.html file
