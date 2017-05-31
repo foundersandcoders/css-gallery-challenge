@@ -1,3 +1,4 @@
 ## Author
-**Active maintainer**
-@njsfield
+**Active maintainer**  
+[@njsfield](https://github.com/njsfield)
+
