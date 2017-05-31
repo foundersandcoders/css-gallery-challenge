@@ -1,1 +1,3 @@
-Nick Field
+## Author
+**Active maintainer**
+@njsfield
