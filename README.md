@@ -1,3 +1,6 @@
+**Author**: [@njsfield](https://github.com/njsfield)  
+**Maintainer**: [@njsfield](https://github.com/njsfield)
+
 # CSS Gallery Challenge
 
 ![Final Screenshot](./images/challenge-screenshot.png)
