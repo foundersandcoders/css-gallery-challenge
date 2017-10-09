@@ -4,23 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Grid Challenge</title>
-    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/prestyle.css"> <!-- Don't Touch -->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
 <body>
- 
-<!-- Intro 
-  
+
+<!-- Intro
+
 There are 4 problem sets.
 
 Each problem set consists of a 'snippet' of html elements that have pre-defined classes applied to them.
 Follow the instructions and write rules for these classes in the style.css file.
 
-Do NOT edit any of the markup in this html file. 
+Do NOT edit any of the markup in this html file.
 
-While you work through the problems, regularly preview the outputted result in a browser window 
+While you work through the problems, regularly preview the outputted result in a browser window
 (if you're using Brackets as a text editor, the Live Preview feature should come in handy...
 otherwise you can preview the index.html file in Chrome and use the Styles pane in Chrome's Developer Tools
 to help)
@@ -29,28 +29,28 @@ Your final html page should look like the pic in the README for this repository 
 
 Good luck!
 
-1. 
+1.
 
 In css/style.css, write rules for the 'photo' class...
-The class should initially make the figure component display full width in the browser window, 
+The class should initially make the figure component display full width in the browser window,
 but it's maximum width should be 600px.
 When the browser window exceeds 600px, the component should simply be centered horizontally.
 
 -->
-  
+
 <figure class="photo" style="border: 3px solid red;">
   <img src="images/astronaut.jpg" alt="Floating Astronaut" width="100%">
   <figcaption>Lovely Astronaut</figcaption>
 </figure>
-  
-  
-<!-- 
+
+
+<!--
 2. Now build styles for the class 'gallery', so that the two nested photo components display 100% width,
 and stack on top of each other when the browser width is less than 600px.
 When the browser viewport width is higher than 600px, the photos should be displayed side by side, with a combined width of 600px. Do NOT edit the original rules for the photo class you've made.
 (Hint, you will need to use a media query, and you will need to use a child selector)
 -->
-  
+
 <div class="gallery" style="border: 3px solid black;">
   <figure class="photo">
     <img src="images/rocket2.jpg" alt="Great Rocket" width="100%">
@@ -61,13 +61,13 @@ When the browser viewport width is higher than 600px, the photos should be displ
     <figcaption>Rocket Right</figcaption>
   </figure>
 </div>
-  
-<!-- 
-3. Write rules for the class 'quarters', 
-so that when the browser viewport width is higher than 600px each photo component is 25% width 
+
+<!--
+3. Write rules for the class 'quarters',
+so that when the browser viewport width is higher than 600px each photo component is 25% width
 (and will stack on top of each other when the browser viewport width is less than 600px)
 -->
-  
+
 <div class="gallery quarters" style="border: 3px solid blue;">
   <figure class="photo">
     <img src="images/rocket1.jpg" alt="Great Rocket" width="100%">
@@ -86,21 +86,21 @@ so that when the browser viewport width is higher than 600px each photo componen
     <figcaption>Rocket 4</figcaption>
   </figure>
 </div>
-  
-<!-- 
+
+<!--
 4. For your final part of the challenge, I need you to be a magician for me...
 Write css rules so that for browser viewports wider than 600px,
 this single photo component is evenly tripled, and the combined width of each component is 600px.
 -->
-  
+
 <div class="gallery" style="border: 3px solid green;">
   <figure class="photo tripled">
     <img src="images/rocket1.jpg" alt="Great Rocket" width="100%">
     <figcaption>Rocket 1 (tripled)</figcaption>
   </figure>
-</div>  
-  
+</div>
 
- 
+
+
 </body>
 </html>
