@@ -1,0 +1,72 @@
+.photo {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.gallery {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+@media screen and (min-width: 600px) {
+
+  .gallery {
+    font-size: 0;
+  }
+
+  .gallery .photo {
+  display: inline-block;
+  width: 50%;
+  }
+
+  .gallery.quarters .photo {
+    width: 25%;
+  }
+
+  /** Triple Challenge **/
+  /* 1. hide the image inside the figure element first */
+  .gallery .tripled img {
+    display: none;
+  }
+  /* 2. Set the figure container to 100% width first
+   * Then calculate the height (using calc function):
+   * - Aspect ratio of the image is 1.246 (962px/772px)
+   * - Divide container width by (3 * aspect ratio)
+   * - Additionally add 20px to height for figcaption.
+   *
+   * Set the background image of the container to the url,
+   * repeat the background image horizontally on x-axis
+   *
+   * Finally set position to relative to allow child
+   * figcaption to be positioned absolutely at the bottom.
+  */
+  .gallery .tripled {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: calc(600px / (3 * (962 / 772)) + 20px);
+    background: url(../images/rocket1.jpg) repeat-x;
+    background-size: 33.333333% auto;
+    position: relative;
+  }
+  /* Height is not essential, as relative font size
+   * will cause container to display at around 20px
+   * anyway.
+   *
+   * Remember to set absolute position to bottom,
+   * 100% width (as absolutely positioned elements
+   * loose block width behaviour by default)
+   *
+   * Align text center is optional
+   */
+  .gallery .tripled figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+  }
+}
